@@ -5,7 +5,7 @@ import inspect
 
 from Aluguel import Aluguel
 
-VALOR_NOMINAL = 400
+VALOR_NOMINAL = 400.0
 
 def test_depois_dia_30_AMR(): 
     aluguel = Aluguel(VALOR_NOMINAL, 31)

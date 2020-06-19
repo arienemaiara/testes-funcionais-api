@@ -3,7 +3,7 @@
 # # Aluguel =  os.path.join(current_dir, 'Aluguel.py')
 from Aluguel import Aluguel
 
-aluguel = Aluguel(400, 9)
+aluguel = Aluguel(400.0, 9)
 
 valor_aluguel = aluguel.calcular_valor()
 
