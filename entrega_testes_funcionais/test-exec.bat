@@ -1,0 +1,1 @@
+pytest --capture=sys tests.py --html=test_report.html --self-contained-html 
