@@ -7,7 +7,7 @@ from Aluguel import Aluguel
 
 VALOR_NOMINAL = 400.0
 
-def test_depois_dia_30_AMR(): 
+def test_dia_31_AMR(): 
     aluguel = Aluguel(VALOR_NOMINAL, 31)
     valor = aluguel.calcular_valor()
     assert valor['valor_calculado'] == -1
@@ -17,27 +17,24 @@ def test_dia_invalido_AMR():
     valor = aluguel.calcular_valor()
     assert valor['valor_calculado'] == -1
 
-def test_dia_1_a_5_AMR():
-    for i in range(1, 6):
-        aluguel = Aluguel(VALOR_NOMINAL, i)
-        valor = aluguel.calcular_valor()
-        valor_aluguel = aluguel.valor_nominal - aluguel.valor_nominal * 0.1
-        assert valor['valor_calculado'] == valor_aluguel
+def test_dia_com_desconto_10_porcento_AMR():
+    aluguel = Aluguel(VALOR_NOMINAL, 2)
+    valor = aluguel.calcular_valor()
+    valor_aluguel = aluguel.valor_nominal - aluguel.valor_nominal * 0.1
+    assert valor['valor_calculado'] == valor_aluguel
 
-def test_dia_6_a_10_AMR():
-    for i in range(6, 11):
-        aluguel = Aluguel(VALOR_NOMINAL, i)
-        valor = aluguel.calcular_valor()
-        valor_aluguel = aluguel.valor_nominal - aluguel.valor_nominal * 0.05
-        assert valor['valor_calculado'] == valor_aluguel
+def test_dia_com_desconto_5_porcento_AMR():
+    aluguel = Aluguel(VALOR_NOMINAL, 6)
+    valor = aluguel.calcular_valor()
+    valor_aluguel = aluguel.valor_nominal - aluguel.valor_nominal * 0.05
+    assert valor['valor_calculado'] == valor_aluguel
 
-def test_dia_11_a_15_AMR(): 
-    for i in range(11, 16):
-        aluguel = Aluguel(VALOR_NOMINAL, i)
-        valor = aluguel.calcular_valor()
-        assert valor['valor_calculado'] == VALOR_NOMINAL
+def test_valor_nominal_AMR(): 
+    aluguel = Aluguel(VALOR_NOMINAL, 11)
+    valor = aluguel.calcular_valor()
+    assert valor['valor_calculado'] == VALOR_NOMINAL
 
-def test_dia_16_AMR(): 
+def test_multa_atraso_AMR(): 
     aluguel = Aluguel(VALOR_NOMINAL, 16)
     valor = aluguel.calcular_valor()
     dias_atraso = 1
