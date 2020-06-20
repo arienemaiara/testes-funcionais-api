@@ -420,7 +420,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>test_report.html</h1>
-    <p>Report generated on 19-Jun-2020 at 20:48:16 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 19-Jun-2020 at 21:37:42 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -436,7 +436,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.3</td></tr></table>
     <h2>Summary</h2>
-    <p>12 tests ran in 10.77 seconds. </p>
+    <p>12 tests ran in 10.38 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">10 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -452,107 +452,107 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">tests.py::test_dia_invalido_AMR</td>
-          <td class="col-duration">1.03</td>
+          <td class="col-duration">0.87</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">def test_dia_invalido_AMR():<br/>        aluguel = Aluguel(VALOR_NOMINAL, 0)<br/>        valor = aluguel.calcular_valor()<br/>&gt;       assert valor[&#x27;valor_calculado&#x27;] == -1<br/><span class="error">E       AssertionError</span><br/><br/>tests.py:14: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">def test_dia_invalido_AMR():<br/>        aluguel = Aluguel(VALOR_NOMINAL, 0)<br/>        valor = aluguel.calcular_valor()<br/>        sys.stderr.write(&quot;Valor esperado: {} - valor recebido {}&quot;.format(-1, valor[&#x27;valor_calculado&#x27;]))<br/>&gt;       assert valor[&#x27;valor_calculado&#x27;] == -1<br/><span class="error">E       AssertionError</span><br/><br/>tests.py:18: AssertionError<br/> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: -1 - valor recebido 360.0<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">tests.py::test_dia_15_AMR</td>
-          <td class="col-duration">0.81</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">def test_dia_15_AMR():<br/>        aluguel = Aluguel(VALOR_NOMINAL, 15)<br/>        valor = aluguel.calcular_valor()<br/>&gt;       assert valor[&#x27;valor_calculado&#x27;] == VALOR_NOMINAL<br/><span class="error">E       AssertionError</span><br/><br/>tests.py:73: AssertionError<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests.py::test_dia_31_AMR</td>
-          <td class="col-duration">0.84</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests.py::test_dia_1_AMR</td>
-          <td class="col-duration">0.80</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests.py::test_dia_3_AMR</td>
-          <td class="col-duration">0.84</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests.py::test_dia_5_AMR</td>
-          <td class="col-duration">0.83</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests.py::test_dia_6_AMR</td>
           <td class="col-duration">0.79</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log">def test_dia_15_AMR():<br/>        aluguel = Aluguel(VALOR_NOMINAL, 15)<br/>        valor = aluguel.calcular_valor()<br/>        sys.stderr.write(&quot;Valor esperado: {} - valor recebido {}&quot;.format(VALOR_NOMINAL, valor[&#x27;valor_calculado&#x27;]))<br/>&gt;       assert valor[&#x27;valor_calculado&#x27;] == VALOR_NOMINAL<br/><span class="error">E       AssertionError</span><br/><br/>tests.py:87: AssertionError<br/> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 400.0 - valor recebido 360.0<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests.py::test_dia_31_AMR</td>
+          <td class="col-duration">0.80</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: -1 - valor recebido -1<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests.py::test_dia_1_AMR</td>
+          <td class="col-duration">0.77</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 360.0 - valor recebido 360.0<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests.py::test_dia_3_AMR</td>
+          <td class="col-duration">0.90</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 360.0 - valor recebido 360.0<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests.py::test_dia_5_AMR</td>
+          <td class="col-duration">0.92</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 360.0 - valor recebido 360.0<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests.py::test_dia_6_AMR</td>
+          <td class="col-duration">0.86</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 380.0 - valor recebido 380.0<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests.py::test_dia_8_AMR</td>
-          <td class="col-duration">1.17</td>
+          <td class="col-duration">0.85</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 380.0 - valor recebido 380.0<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests.py::test_dia_10_AMR</td>
-          <td class="col-duration">0.81</td>
+          <td class="col-duration">0.83</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 380.0 - valor recebido 380.0<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests.py::test_dia_11_AMR</td>
-          <td class="col-duration">0.78</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests.py::test_dia_12_AMR</td>
-          <td class="col-duration">0.82</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests.py::test_multa_atraso_AMR</td>
           <td class="col-duration">0.81</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 400.0 - valor recebido 400.0<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests.py::test_dia_12_AMR</td>
+          <td class="col-duration">0.83</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 400.0 - valor recebido 400.0<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests.py::test_multa_atraso_AMR</td>
+          <td class="col-duration">0.83</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>Valor esperado: 408.4 - valor recebido 408.4<br/></div></td></tr></tbody></table></body></html>
