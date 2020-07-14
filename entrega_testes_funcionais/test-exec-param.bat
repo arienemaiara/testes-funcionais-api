@@ -1,0 +1,1 @@
+pytest --capture=sys param_tests.py --html=test_report_params.html --self-contained-html 

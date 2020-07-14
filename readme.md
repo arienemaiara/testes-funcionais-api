@@ -21,7 +21,7 @@ Pelo terminal ir até a pasta de projetos
 ```
 cd testes-funcionais-api
 ```
-
+## Testes funcionais
 ### Execução dos testes
 Pelo terminal ir até a pasta de testes funcionais 
 ```
@@ -44,3 +44,16 @@ test-exec.bat
 ```
 
 Relatório gerado no arquivo *test_report.html*
+
+## Testes funcionais parametrizados
+Executar os testes
+```
+pytest param_tests.py
+```
+
+Gerar relatório de testes em HTML
+```
+test-exec-param.bat
+```
+
+Relatório gerado no arquivo *test_report_params.html*
